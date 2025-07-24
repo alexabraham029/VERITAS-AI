@@ -37,7 +37,7 @@ def generate_response(payload: Query):
     try:
         # Dynamically use user's Groq key
         chat = ChatGroq(
-            model="gemma-7b-it",  # Or mixtral-8x7b, llama3-8b-8192 etc.
+            model="gemma2-9b-it",  # Or mixtral-8x7b, llama3-8b-8192 etc.
             api_key=payload.groq_api_key,
             temperature=payload.temperature,
             max_tokens=payload.max_tokens
